@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from "react";
-import Client from "./Client";
-import Editor from "./Editor";
+import Client from "./Client.jsx";
+import Editor from "./Editor.jsx";
 import { initSocket } from "../Socket.jsx";
-import { ACTIONS } from "../Actions";
+import { ACTIONS } from "../Actions.js";
 import logo from "../assets/logo1.png";
 import {
   useNavigate,
