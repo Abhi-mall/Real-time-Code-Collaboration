@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from "react";
 import Client from "./Client.jsx";
 import Editor from "./Editor.jsx";
-import { initSocket } from "../Socket.jsx";
+import { initSocket } from "../utils/socket.jsx";
 import { ACTIONS } from "../Actions.js";
 import logo from "../assets/logo1.png";
 import {
