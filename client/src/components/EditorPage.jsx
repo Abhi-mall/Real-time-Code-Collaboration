@@ -114,10 +114,13 @@ function EditorPage() {
   const runCode = async () => {
     setIsCompiling(true);
     try {
-      const response = await axios.post("http://localhost:5000/compile", {
-        code: codeRef.current,
-        language: selectedLanguage,
-      });
+      const response = await axios.post(
+        `${import.meta.env.VITE_BACKEND_URL}/compile`,
+        {
+          code: codeRef.current,
+          language: selectedLanguage,
+        }
+      );
       setOutput(response.data.output || JSON.stringify(response.data));
     } catch (error) {
       console.error("Error compiling code:", error);
