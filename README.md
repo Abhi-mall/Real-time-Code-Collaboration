@@ -38,7 +38,7 @@ If you want to run CodeCast locally or contribute to its development, follow the
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/codesync.git
+   git clone https://github.com/Abhi-mall/Real-time-Code-Collaboration
    cd codesync
    ```
 2. Install dependencies:
