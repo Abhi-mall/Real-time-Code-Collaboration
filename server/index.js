@@ -118,6 +118,9 @@ app.post("/compile", async (req, res) => {
   }
 })
 
+app.get("/", (req, res) => {
+  res.send(" Socket.IO backend is running successfully!");
+});
 
 server.listen(PORT, (req, res)=> {
   console.log(`server is running ${PORT}`)
